@@ -1,0 +1,22 @@
+/* -- custom css for file map_routes_detail.html -- */
+
+/* -- block custom-block -- */
+#div-2085 {
+	border-top-width: 1px !important;
+	 border-top-style: dashed !important;
+	 border-top-color: transparent !important;
+	 border-bottom-width: 1px !important;
+	 border-bottom-style: dashed !important;
+	 border-bottom-color: transparent !important;
+}
+
+/* -- dbexpress-field font-weight-bold text-capitalize -- */
+#div-2086 {
+	font-size: 23px;
+}
+
+/* -- dbexpress-field text-muted text-uppercase -- */
+#div-2087 {
+	font-size: 11px;
+}
+

@@ -1,0 +1,30 @@
+/* -- custom css for file repeater_horizontal.html -- */
+
+/* -- title -- */
+#title-o-1214 {
+	left: -12px;
+}
+
+/* -- card m-1 text-center -- */
+#card-1250 {
+	width: 160px;
+}
+
+/* -- dbexpress-field text-black text-center w-100 -- */
+#div-1256 {
+	width: 100px;
+}
+
+/* -- dbexpress-field rounded-circle m-1 dbexpress-image -- */
+#div-4110 {
+	height: 64px;
+	 width: 64px;
+}
+
+/* -- dbexpress-field text-center clampin overflow-hidden -- */
+#div-4891 {
+	font-size: 11px;
+	 -webkit-line-clamp: 1;
+	 max-width: 100px;
+}
+

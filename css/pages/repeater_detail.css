@@ -1,0 +1,18 @@
+/* -- custom css for file repeater_detail.html -- */
+
+/* -- dbexpress-field mt-2 mb-2 font-weight-bold text-capitalize -- */
+#div-1493 {
+	font-size: 23px;
+}
+
+/* -- dbexpress-field mt-2 mb-2 text-muted -- */
+#obj-1494 {
+	font-size: 15px;
+}
+
+/* -- dbexpress-field dbexpress-image img-zoom rounded -- */
+#div-5214 {
+	width: 96px;
+	 height: 96px;
+}
+

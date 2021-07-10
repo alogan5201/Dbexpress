@@ -1,0 +1,24 @@
+/* -- custom css for file user_detail.html -- */
+
+/* -- dbexpress-field dbexpress-image embed-responsive-21by9 embed-responsive -- */
+#div-5212 {
+	filter: blur(9px) brightness(89%) saturate(39%);
+}
+
+/* -- dbexpress-field rounded-circle dbexpress-image -- */
+#div-1999 {
+	width: 96px;
+	 height: 96px;
+	 margin-top: -56px;
+}
+
+/* -- dbexpress-field mt-3 font-weight-bold -- */
+#div-2001 {
+	font-size: 22px;
+}
+
+/* -- dbexpress-field text-muted -- */
+#div-2002 {
+	font-size: 15px;
+}
+

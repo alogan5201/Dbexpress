@@ -1,0 +1,23 @@
+/* -- custom css for file repeater_sortbyfield.html -- */
+
+/* -- title -- */
+#title-o-1683 {
+	left: -12px;
+}
+
+/* -- col dbexpress-search-filter chip chip-outline bg-color-blue text-white -- */
+#obj-1701 {
+	font-size: 11px;
+}
+
+/* -- col dbexpress-search-filter chip chip-outline text-uppercase bg-color-blue text-white -- */
+#obj-1803 {
+	font-size: 11px;
+	 box-sizing: border-box;
+}
+
+/* -- dbexpress-field text-black text-center -- */
+#obj-1694 {
+	font-size: 15px;
+}
+

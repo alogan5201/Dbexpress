@@ -1,0 +1,13 @@
+/* -- custom css for file linked_repeaters.html -- */
+
+/* -- virtual-list-media dbexpress-field dbexpress-image -- */
+#repeater-1332-imp {
+	width: 80px;
+	 height: 80px;
+}
+
+/* -- dbexpress-field text-warning -- */
+#repeater-1332-itxf {
+	font-size: 20px;
+}
+

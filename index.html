@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en"  class="disable-bounce"  >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="google" content="notranslate">
+  <title>poc_authentification</title>
+  <meta name="description" content="" />
+  <meta name="Author" content="" />
+  <meta name="Copyright" content="" />
+  <meta name="Keywords" content="" />
+  <meta name="Subject" content="" />
+  <meta property="og:url"  content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="" />
+  <meta name="theme-color" content="">
+  <meta name="apple-mobile-web-app-title" content="Thorium dbExpress">
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-TileColor" content="">
+  <meta name="msapplication-TileImage" content="./icons/apple-touch-icon-144x144.png">
+  <meta name="msapplication-square70x70logo" content="./icons/apple-touch-icon-70x70.png">
+  <meta name="msapplication-square150x150logo" content="./icons/apple-touch-icon-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="./icons/apple-touch-icon-150x150.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+  <link rel="stylesheet" href="js/plugins/thorium.leaflet.com/leaflet.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/framework7-keypad.min.css">
+  <link rel="stylesheet" href="css/thorium.min.css">
+  <link rel="stylesheet" href="css/pages/index.css?r=65814">
+  <link rel="stylesheet" href="css/pages/repeater_infinitescroll.css?r=91001">
+  <link rel="stylesheet" href="css/pages/repeater_horizontal.css?r=59613">
+  <link rel="stylesheet" href="css/pages/linked_repeaters.css?r=72975">
+  <link rel="stylesheet" href="css/pages/repeater_customtemplate.css?r=14224">
+  <link rel="stylesheet" href="css/pages/repeater_with_detail.css?r=74533">
+  <link rel="stylesheet" href="css/pages/repeater_detail.css?r=25068">
+  <link rel="stylesheet" href="css/pages/repeater_pulltorefresh.css?r=75083">
+  <link rel="stylesheet" href="css/pages/repeater_filter_button.css?r=15994">
+  <link rel="stylesheet" href="css/pages/repeater_sortbyfield.css?r=59247">
+  <link rel="stylesheet" href="css/pages/repeater_userlist.css?r=19747">
+  <link rel="stylesheet" href="css/pages/user_detail.css?r=20949">
+  <link rel="stylesheet" href="css/pages/map_routes.css?r=98148">
+  <link rel="stylesheet" href="css/pages/map_routes_detail.css?r=67769">
+  <link rel="stylesheet" href="css/pages/maps_leaflet.css?r=10706">
+  <link rel="stylesheet" href="css/pages/repeater_datatypes.css?r=85715">
+  <link rel="stylesheet" href="css/pages/datatypes_displayer.css?r=16831">
+  <link rel="stylesheet" href="css/pages/repeater_api.css?r=88118">
+  <link rel="stylesheet" href="css/pages/displayer_deleteitem.css?r=68546">
+  <link rel="stylesheet" href="css/pages/forms_addrecord_text.css?r=28715">
+  <link rel="stylesheet" href="css/pages/form_parenttable.css?r=64032">
+  <link rel="stylesheet" href="css/pages/forms_addrecord_numeric.css?r=65739">
+  <link rel="stylesheet" href="css/pages/forms_addrecord_datetime.css?r=28098">
+  <link rel="stylesheet" href="css/pages/forms_boolean.css?r=70844">
+  <link rel="stylesheet" href="css/pages/repeater_parentlist.css?r=75085">
+  <link rel="stylesheet" href="css/pages/displayer_parent_childs.css?r=93006">
+  <link rel="stylesheet" href="css/pages/repeter_searchbox.css?r=91505">
+  <link rel="stylesheet" href="css/classes.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" >
+  <div class="apploader"></div>
+  <div id="app" class="framework7-root">
+	<div class="panel-backdrop"></div>
+	<div id="panel-left" class="panel panel-left panel-init panel-cover" data-swipe="true">
+    		<div id="left-panel-page-o-1001" class="page">
+        			<div id="left-panel-page-content" class="page-content"></div>
+    		</div>
+	</div>
+
+	<div id="panel-right" class="panel panel-right panel-init panel-cover" data-swipe="true">
+    		<div id="right-panel-page-o-1002" class="page">
+        			<div id="right-panel-page-content" class="page-content"></div>
+    		</div>
+	</div>
+
+	<div id="view-main" class="view view-main view-init" data-url="/">
+		<div id="page" class="page" data-name="index">
+		
+	<div id="navbar-o-1003" class="navbar no-hairline no-shadow"><div id="navbg-navbar-o-1003" class="navbar-bg"></div><div id="navbar-inner-o-1005" class="navbar-inner ">
+<div id="left-o-1006" class="left">
+</div>
+<div id="title-o-1007" class="title ">Thorium dbExpress<span id="obj-4618" class="subtitle">PoC (Proof of Concept SQLite)</span>
+</div>
+<div id="right-o-1008" class="right">
+</div>
+</div>
+
+</div>
+
+			<div id="page-contents-o-1009" class="page-content">
+
+			    <div id="card-5269" class="card card-rounded"><div id="obj-5270" class="card-header"><h3 id="h3-5276" class="h3 m-0">Thorium Builder Database Widgets</h3></div>
+ <div class="unsplash-container"><img id="img-5273" class="card-img-top" src="img/11178.jpg" alt="..." width="100%" data-unsplash-name="Carl Heyerdahl" data-unsplash-username="carlheyerdahl" data-unsplash-avatar="https://images.unsplash.com/profile-1461024468026-751de59ac1ac?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=32&amp;w=32"><p class="unsplash-notice">Photo by <a class="link external" href="https://unsplash.com/@carlheyerdahl?utm_source=thoriumbuilder&amp;utm_medium=referral" target="_blank" rel="noopener">Carl Heyerdahl</a> on <a class="link external" rel="noopener" target="_blank" href="https://unsplash.com/?utm_source=thoriumbuilder&amp;utm_medium=referral">Unsplash</a></p></div>
+<div id="obj-5271" class="card-content card-content-padding"><div id="div-4894" class="block custom-block block-text block-strong inset"><p id="obj-5636">This application is a simple example that illustrates some features of Thorium dbExpress.</p></div></div>
+</div><div id="div-1103" class="block-title font-weight-bold mt-3 block-title-medium">Repeaters &amp; Displayers</div> <div id="datalist-1078" class="list bg-color-white no-hairlines-between no-hairlines"><ul id="obj-1079"><li id="obj-1080">
+<a id="obj-1148" class="item-link item-content" data-transition="" href="/repeater_infinitescroll/">
+<div id="obj-1084" class="item-inner">
+<div id="obj-1085" class="item-title">
+Infinite Scroll
+<div id="obj-1104" class="item-footer">Demo with 10563 records loaded 100  by 100</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1087">
+<a id="obj-1244" class="item-link item-content" data-transition="" href="/repeater_horizontal/">
+<div id="obj-1091" class="item-inner">
+<div id="obj-1092" class="item-title">
+Horizontal Repeater
+<div id="obj-1225" class="item-footer">Horizontal Display Mode with Repeaters</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1287">
+<a id="obj-1331" class="item-link item-content" data-transition="" href="/linked_repeaters/">
+<div id="obj-1290" class="item-inner">
+<div id="obj-1292" class="item-title">
+Linked Repeaters
+<div id="obj-1327" class="item-footer">2 Repeaters Connected Together</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1351">
+<a id="obj-1403" class="item-link item-content" data-transition="" href="/repeater_customtemplate/">
+<div id="obj-1354" class="item-inner">
+<div id="obj-1356" class="item-title">
+custom template repeater
+<div id="obj-1357" class="item-footer">example of template with 2 columns</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1438">
+<a id="obj-1478" class="item-link item-content" data-transition="" href="/repeater_with_detail/">
+<div id="obj-1441" class="item-inner">
+<div id="obj-1443" class="item-title">
+Repeater With Detail
+<div id="obj-1444" class="item-footer">Master-Detail from Repeater</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1550">
+<a id="obj-1560" class="item-link item-content" data-transition="" href="/repeater_pulltorefresh/">
+<div id="obj-1553" class="item-inner">
+<div id="obj-1555" class="item-title">
+Repeater: Pull to Refresh
+<div id="obj-1556" class="item-footer">Pull to reload the page</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1621">
+<a id="obj-1673" class="item-link item-content" data-transition="" href="/repeater_filter_button/">
+<div id="obj-1624" class="item-inner">
+<div id="obj-1626" class="item-title">
+Repeater: Filter Buttons
+<div id="obj-1627" class="item-footer">Filter Buttons example</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1744">
+<a id="obj-1802" class="item-link item-content" data-transition="" href="/repeater_sortbyfield/">
+<div id="obj-1747" class="item-inner">
+<div id="obj-1749" class="item-title">
+Repeaters: Sort by Field
+<div id="obj-1750" class="item-footer">Sorting a Repeater</div>
+</div>
+</div>
+</a>
+</li><li id="obj-1867">
+<a id="obj-1931" class="item-link item-content" data-transition="" href="/repeater_userlist/">
+<div id="obj-1870" class="item-inner">
+<div id="obj-1872" class="item-title">
+User List with Detail
+<div id="obj-1873" class="item-footer">Show Users List</div>
+</div>
+</div>
+</a>
+</li><li id="obj-4781">
+<a id="obj-4889" class="item-link item-content" data-transition="" href="/repeater_parentlist/">
+<div id="obj-4784" class="item-inner">
+<div id="obj-4786" class="item-title">
+Displayer: Show Child Records
+<div id="obj-4787" class="item-footer">Show the childs of a given record</div>
+</div>
+</div>
+</a>
+</li><li id="obj-4976">
+<a id="obj-5157" class="item-link item-content" data-transition="" href="/repeter_searchbox/">
+<div id="obj-4979" class="item-inner">
+<div id="obj-4981" class="item-title">
+Search Box
+<div id="obj-4982" class="item-footer">Search Box Example</div>
+</div>
+</div>
+</a>
+</li></ul></div><div id="obj-2175" class="block-title font-weight-bold block-title-medium">Field Data Types</div><div id="obj-2354" class="list no-hairlines-between no-hairlines bg-color-white"><ul id="obj-2355"><li id="obj-2356">
+<a id="obj-2357" class="item-link item-content" data-transition="" href="/repeater_datatypes/">
+<div id="obj-2358" class="item-inner">
+<div id="obj-2359" class="item-title">
+Repeater + Displayer Example
+<div id="obj-2360" class="item-footer">dbExpress Data Types Example</div>
+</div>
+</div>
+</a>
+</li></ul></div><div id="obj-2013" class="block-title font-weight-bold block-title-medium">Forms</div><div id="obj-3572" class="list no-hairlines-between no-hairlines bg-color-white"><ul id="obj-3573"><li id="obj-3574">
+<a id="obj-3575" class="item-link item-content" data-transition="f7-cover-v" href="/forms_addrecord_text/">
+<div id="obj-3576" class="item-inner">
+<div id="obj-3577" class="item-title">
+Form Input (Text Types)
+<div id="obj-3578" class="item-footer">dbExpress (update &amp; Insert) example</div>
+</div>
+</div>
+</a>
+</li><li id="obj-4271">
+<a id="obj-4281" class="item-link item-content" data-transition="f7-cover-v" href="/forms_addrecord_numeric/">
+<div id="obj-4274" class="item-inner">
+<div id="obj-4276" class="item-title">
+Form Input  (Numeric Types)
+</div>
+</div>
+</a>
+</li><li id="obj-4354">
+<a id="obj-4364" class="item-link item-content" data-transition="f7-cover-v" href="/forms_addrecord_datetime/">
+<div id="obj-4357" class="item-inner">
+<div id="obj-4359" class="item-title">
+Form Input  (Date &amp; Time Types)
+<div id="obj-4360" class="item-footer">dbExpress Forms (Date &amp; Time Types)</div>
+</div>
+</div>
+</a>
+</li><li id="obj-4483">
+<a id="obj-4524" class="item-link item-content" data-transition="" href="/forms_boolean/">
+<div id="obj-4486" class="item-inner">
+<div id="obj-4488" class="item-title">
+Forms Input (Boolean and Radio)
+<div id="obj-4489" class="item-footer">Forms Input (Boolean and Radio)</div>
+</div>
+</div>
+</a>
+</li><li id="obj-4010">
+<a id="obj-4048" class="item-link item-content" data-transition="f7-cover-v" href="/form_parenttable/">
+<div id="obj-4013" class="item-inner">
+<div id="obj-4015" class="item-title">
+Form With Parent Table (Lookup)
+<div id="obj-4016" class="item-footer">Form With Parent Table (Lookup)</div>
+</div>
+</div>
+</a>
+</li></ul></div><div id="obj-3571" class="block-title font-weight-bold block-title-medium">Maps</div><div id="obj-2014" class="list bg-color-white no-hairlines-between no-hairlines"><ul id="obj-2015"><li id="obj-2016">
+<a id="obj-2017" class="item-link item-content" data-transition="" href="/map_routes/">
+<div id="obj-2018" class="item-inner">
+<div id="obj-2019" class="item-title">
+Geo-Point Route
+<div id="obj-2020" class="item-footer">Display external Google Map &amp; Route to, Route from Point</div>
+</div>
+</div>
+</a>
+</li><li id="obj-2112">
+<a id="obj-2146" class="item-link item-content" data-transition="" href="/maps_leaflet/">
+<div id="obj-2115" class="item-inner">
+<div id="obj-2117" class="item-title">
+Open Street Map / Leaflet.js example
+<div id="obj-2143" class="item-footer">OSM/Leaflet Map Markers list example</div>
+</div>
+</div>
+</a>
+</li></ul></div><div id="obj-5513" class="block-title font-weight-bold block-title-medium">API</div><div id="obj-5514" class="list bg-color-white no-hairlines-between no-hairlines"><ul id="obj-5515"><li id="obj-5516">
+<a id="obj-5517" class="item-link item-content" data-transition="" href="/repeater_api/">
+<div id="obj-5518" class="item-inner">
+<div id="obj-5519" class="item-title">
+Repeater API functions
+<div id="obj-5520" class="item-footer">Access to Repeater Data with the Thorium API</div>
+</div>
+</div>
+</a>
+</li></ul></div></div>
+		</div>           	
+         </div>
+</div>
+
+  <div class="custominfowindow"></div>
+
+  <!-- LOGIN SCREEN -->
+<div class="login-screen dbexpress-signin">
+    <div class="view">
+        <div class="page">
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                    <div class="left">
+                        <a class="link login-screen-close">Close</a>
+                    </div>
+                    <div class="title">Sign In</div>
+                    <div class="right">
+                    </div>
+                </div>
+            </div>
+            <div class="page-content dbexpress-signin-content">
+                <form id="dbexpress-signin-form" name="dbexpress-signin-form"
+                    class="list dbexpress-signin-form form-ajax-submit inset">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label" autocomplete="on">
+                                    email</div>
+                                <div class="item-input-wrap">
+                                    <input id="dbexpress-signin-email" name="dbexpress-signin-email"
+                                        class="dbexpress-signin-email" type="email" maxlength="255" required
+                                        placeholder="Enter your email address">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Password</div>
+                                <div class="item-input-wrap">
+                                    <input id="dbexpress-signin-password" name="dbexpress-signin-password"
+                                        autocomplete="on" class="dbexpress-signin-password" maxlength="255"
+                                        type="password" required placeholder="Enter your password">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input pb-2">
+                            <div class="item-inner">
+                                <div class="item-input-wrap pt-4">
+                                    <button type="submit"
+                                        class="col button button-large button-raised button-fill  dbexpress-signin-submit"
+                                        id="dbexpress-signin-submit">Signin</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="block-footer mt-3 text-center">
+                        <div class="item-input-wrap pt-4 pb-4 text-center">
+                            <a class="link registerlink" href="#">Register</a>
+                            <span>&nbsp;</span>
+                            <a class="link resetpasswwordlink" href="#">Forgotten Password</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="block-footer mt-3 text-center">
+                    <a class="link termsofuse" href="#">Terms of Use</a>
+                    <span>&nbsp;-&nbsp;</span>
+                    <a class="link privacypolicy" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RESET PASSWORD SCREEN -->
+<div class="sheet-modal dbexpress-resetpassword">
+    <div class="toolbar">
+        <div class="toolbar-inner">
+            <div class="left">
+                <a class="link sheet-close">Close</a>
+            </div>
+            <div class="title">Reset Password</div>
+            <div class="right">
+            </div>
+        </div>
+    </div>
+    <div class="sheet-modal-inner">
+        <form id="resetpw-form" name="resetpw-form" class="list inset form-ajax-submit dbexpress-resetpassword-form">
+            <ul>
+                <li class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-input-wrap">
+                            <input id="dbexpress-resetpassword-email" name="dbexpress-resetpassword-email"
+                                class="dbexpress-resetpassword-email" type="email" required
+                                placeholder="Enter your email address" maxlength="255" autocomplete="on">
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content item-input pt-2">
+                    <div class="item-inner">
+                        <button type="submit"
+                            class="col button button-large button-raised button-fill dbexpress-resetpassword-submit"
+                            id="dbexpress-resetpassword-submit">Reset</button>
+                    </div>
+                </li>
+            </ul>
+
+        </form>
+    </div>
+</div>
+
+<!-- 2 FACTORS SCREEN -->
+<div class="popup popup-tablet-fullscreen dbexpress-twofactors">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="left"></div>
+                    <div class="title">PIN</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="block passcode-input">
+                    <h2 class="text-center">Enter your PIN</h2>
+                    <input class="dbexpress-twofactors-pin" readonly value="____" id="dbexpress-twofactors-pin"
+                        type="text">
+                </div>
+                <div class="numpad-inline-container ripple">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- REGISTER SCREEN-->
+<div class="popup popup-tablet-fullscreen dbexpress-register">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg">
+                </div>
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a class="link popup-close">Close</a>
+                    </div>
+                    <div class="title">Register</div>
+                    <div class="right">
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <form id="register-form" name="register-form"
+                    class="list form-ajax-submit inset dbexpress-register-form" autocomplete="on">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">email</div>
+                                <div class="item-input-wrap">
+                                    <input id="dbexpress-register-email" name="dbexpress-register-email"
+                                        class="dbexpress-register-email" type="email" required
+                                        placeholder="Enter your email address" maxlength="255" autocomplete="on">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">
+                                    Full Name</div>
+                                <div class="item-input-wrap">
+                                    <input id="dbexpress-register-displayname" name="dbexpress-register-displayname"
+                                        class="dbexpress-register-displayname" type="text" required
+                                        placeholder="Enter your name" maxlength="255">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">
+                                    Password</div>
+                                <div class="item-input-wrap">
+                                    <input id="dbexpress-register-password" name="dbexpress-register-password"
+                                        class="dbexpress-register-password" type="password" required
+                                        placeholder="Enter your password" maxlength="255" autocomplete="on">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Password verification</div>
+                                <div class="item-input-wrap">
+                                    <input id="dbexpress-register-password-verification"
+                                        name="dbexpress-register-password-verification"
+                                        class="dbexpress-register-password-verification" type="password" required
+                                        placeholder="Password verification" maxlength="255"
+                                        autocomplete="on">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <span>Accept Conditions of use</a></span>
+                            <label class="toggle toggle-init dbexpress-register-gdpr mr-2">
+                                <input type="checkbox">
+                                <span class="toggle-icon"></span>
+                            </label>
+                        </li>
+
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-input-wrap pt-4 pb-4">
+                                    <button type="submit"
+                                        class="col button button-large button-raised button-fill dbexpress-register-submit">Register</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <div class="block-footer mt-3 text-center">
+                    <a class="link termsofuse" href="#">Terms of Use</a>
+                    <span>&nbsp;-&nbsp;</span>
+                    <a class="link privacypolicy" href="#">Privacy Policy</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PROFILE SCREEN-->
+<div class="popup popup-tablet-fullscreen dbexpress-profile">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a class="link popup-close">Close</a>
+                    </div>
+                    <div class="title">My Profile</div>
+                    <div class="right">
+                        <a class="link dbexpress-profile-submit">Save</a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <form id="dbexpress-profile-form" name="dbexpress-profile-form"
+                    class="list dbexpress-profile-form form-ajax-submit ">
+
+                    <div class="block">
+
+                        <div class="tabcontainer">
+                            <div class="segmented segmented-strong">
+                                <a href="#obj-1114-tab-1" class="button tab-link tab-link-active button-active">Identification</a>
+                                <a href="#obj-1114-tab-2" class="button tab-link">Address</a>
+                                <span class="segmented-highlight"></span>
+                            </div>
+                            <div>
+                                <div class="tabs">
+                                    <div id="obj-1114-tab-1" class="tab tab-active" data-label="Tab1">
+                                        <div class="block block-strong no-hairlines mt-2  pl-0 pr-0">
+                                            <ul>
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">
+                                                            Full Name</div>
+                                                        <div class="item-input-wrap">
+                                                            <input id="dbexpress-profile-displayname"
+                                                                name="dbexpress-profile-displayname"
+                                                                class="dbexpress-profile-displayname" type="text"
+                                                                required validate data-validate-on-blur="true"
+                                                                placeholder="Enter your name" maxlength="255">
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="item-content item-input item-input-wrap item-input-outline">
+                                                    <div class="item-inner">
+                                                        <input id="dbexpress-profile-photourl-fileinput"
+                                                            name="dbexpress-profile-photourl-fileinput"
+                                                            data-fileinput-ref="dbexpress-profile-photourl" type="file"
+                                                            data-resize="96" accept="image/png, image/jpeg"
+                                                            class="firebase_document_input">
+                                                        <div class="item-title item-label">Profile Picture</div>
+                                                        <div class="dbexpress-profile-photourl-container">
+                                                            <input id="dbexpress-profile-photourl"
+                                                                name="dbexpress-profile-photourl" alt=" " type="image"
+                                                                data-resize="128"
+                                                                class="img img-thumbnail firebase_document_preview dbexpress-profile-photourl">
+                                                            <div class="dbexpress-profile-controls display-flex">
+                                                                <div id="dbexpress-profile-photourl-remove"
+                                                                    class="button button-fill firebase_fileupload-remove tooltip-init"
+                                                                    data-tooltip="Suppress"
+                                                                    data-fileinput-ref="dbexpress-profile-photourl">
+                                                                    <i class="fa f7-icons">xmark_circle</i>
+                                                                </div>
+                                                                <div id="dbexpress-profile-photourl-rotate"
+                                                                    class="button button-fill firebase_fileupload-rotate tooltip-init"
+                                                                    data-tooltip="Rotate"
+                                                                    data-fileinput-ref="dbexpress-profile-photourl">
+                                                                    <i class="fa f7-icons">arrow_clockwise</i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-filename">
+                                                            <i class="fa f7-icons">photo</i><span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">
+                                                            Short Description</div>
+                                                        <div class="item-input-wrap">
+                                                            <input id="dbexpress-profile-shortdesc"
+                                                                name="dbexpress-profile-shortdesc"
+                                                                class="dbexpress-profile-shortdesc" type="text"
+                                                                placeholder="Short Description" maxlength="255">
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label mt-1">
+                                                            Title / Function</div>
+                                                        <div class="item-input-wrap">
+                                                            <textarea id="dbexpress-profile-bio"
+                                                                name="dbexpress-profile-bio"
+                                                                class="dbexpress-profile-bio" rows="4"
+                                                                placeholder="Enter your title / funtion"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="item-content item-input item-input-wrap item-input-outline">
+                                                    <div class="item-inner">
+                                                        <input id="dbexpress-profile-headimage-fileinput"
+                                                            name="dbexpress-profile-headimage-fileinput"
+                                                            data-fileinput-ref="dbexpress-profile-headimage" type="file"
+                                                            data-resize="800" accept="image/png, image/jpeg"
+                                                            class="firebase_document_input">
+                                                        <div class="item-title item-label">
+                                                            Background Header</div>
+                                                        <div class="dbexpress-profile-headimage-container">
+                                                            <input id="dbexpress-profile-headimage"
+                                                                name="dbexpress-profile-headimage" alt=" " type="image"
+                                                                data-resize="128"
+                                                                class="img img-thumbnail firebase_document_preview dbexpress-profile-headimage">
+                                                            <div class="dbexpress-profile-controls display-flex">
+                                                                <div id="dbexpress-profile-headimage-remove"
+                                                                    class="button button-fill firebase_fileupload-remove tooltip-init"
+                                                                    data-tooltip="Suppress"
+                                                                    data-fileinput-ref="dbexpress-profile-headimage">
+                                                                    <i class="fa f7-icons">xmark_circle</i>
+                                                                </div>
+                                                                <div id="dbexpress-profile-headimage-rotate"
+                                                                    class="button button-fill firebase_fileupload-rotate tooltip-init"
+                                                                    data-tooltip="Rotate"
+                                                                    data-fileinput-ref="dbexpress-profile-headimage">
+                                                                    <i class="fa f7-icons">arrow_clockwise</i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-filename">
+                                                            <i class="fa f7-icons">photo</i><span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="obj-1114-tab-2" class="tab" data-label="Tab2">
+                                        <div class="block block-strong no-hairlines mt-2 pl-0 pr-0">
+                                            <ul>
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">Tel #
+                                                        </div>
+                                                        <div class="item-input-wrap">
+                                                            <input id="dbexpress-profile-phonenumber"
+                                                                name="dbexpress-profile-phonenumber"
+                                                                class="dbexpress-profile-phonenumber" type="tel"
+                                                                placeholder="Enter Tel Number" maxlength="255">
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">
+                                                            Address</div>
+                                                        <div class="item-input-wrap">
+                                                            <input id="dbexpress-profile-address"
+                                                                name="dbexpress-profile-address"
+                                                                class="dbexpress-profile-address" type="text"
+                                                                placeholder="Enter your Address" maxlength="255">
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">Zip Code
+                                                        </div>
+                                                        <div class="item-input-wrap">
+                                                            <input id="dbexpress-profile-zip"
+                                                                name="dbexpress-profile-zip"
+                                                                class="dbexpress-profile-zip" type="text"
+                                                                placeholder="Enter your Zip Code" maxlength="255">
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">
+                                                            City</div>
+                                                        <div class="item-input-wrap">
+                                                            <input id="dbexpress-profile-city"
+                                                                name="dbexpress-profile-city"
+                                                                class="dbexpress-profile-city" type="text"
+                                                                placeholder="Enter City name" maxlength="255">
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">
+                                                            State</div>
+                                                        <div class="item-input-wrap">
+                                                            <input id="dbexpress-profile-state"
+                                                                name="dbexpress-profile-state"
+                                                                class="dbexpress-profile-state" type="text"
+                                                                placeholder="Enter your state" maxlength="255">
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="item-content item-input  item-input-outline">
+                                                    <div class="item-inner">
+                                                        <div class="item-title item-label">
+                                                            Country</div>
+                                                        <div class="item-input-wrap">
+                                                            <select id="dbexpress-profile-country"
+                                                                class="no-store-data input-with-value dbexpress-profile-country"
+                                                                name="dbexpress-profile-country">
+                                                                <option value="">Choose your Country
+                                                                </option>
+                                                                <optgroup label="Country List">
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ADD T0 CART-->
+<div class="sheet-addtocart sheet-modal my-sheet-swipe-to-close" style="height: auto;">
+    <div class="sheet-modal-inner">
+        <div class="sheet-modal-swipe-step">
+            <div class="display-flex padding justify-content-space-between align-items-center">
+                <div>Order total</div>
+                <div id="stepper-addtocart" class="stepper stepper-small stepper-init stepper-raised stepper-init"
+                    data-value="1" data-min="0" data-step="1" data-wraps="true">
+                    <div class="stepper-button-minus"></div>
+                    <div class="stepper-value">1</div>
+                    <div class="stepper-button-plus"></div>
+                </div>
+            </div>
+            <div class="padding-horizontal padding-bottom">
+                <a class="button button-large button-fill button-cart" href="#">Order total</a>
+                <div class="margin-top text-align-center">Order total</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SHOPPING CART -->
+<div class="popup popup-tablet-fullscreen shoppingcartpopup shoppingcart-rounded-8" data-currency="USD"
+    data-currency-symbol="€" data-symbol-left="false" data-payment-provider=""
+    data-delivery="0.00" data-skip-payment="false">
+    <div class="view">
+        <div class="page navbar-fixed">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="left"><a href="#" class="link popup-close">Close</a>
+                    </div>
+                    <div class="center">Shopping Cart:</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div id="shoppingcartpopup-content" class="page-content">
+                <div class="shoppingcart-template">
+                    <li data-object-pk="{{pk}}" data-cart-uid="{{uid}}" class="block block-strong inset mb-2 mt-2">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <div class="item-media-img" style="{{image}}">
+                                </div>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">{{title}}</div>
+                                </div>
+                                <div class="item-text">{{cart_desc}}</div>
+                                <div
+                                    class="display-flex flex-row justify-content-space-between align-items-center flex-wrap">
+                                    <div data-line-pk="{{pk}}" data-object-pk="{{parent_pk}}"
+                                        class="stepper stepper-raised stepper-shoppingcart stepper-small stepper-init mt-2"
+                                        data-value="{{qty}}" data-min="0" data-step="1" data-wraps="true">
+                                        <div class="stepper-button-minus"></div>
+                                        <div class="stepper-value">{{qty}}</div>
+                                        <div class="stepper-button-plus"></div>
+                                    </div>
+                                    <div class="shoppingcart-line-total mt-2" data-line-pk="{{pk}}">
+                                        {{total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <!-- TabsBlock-->
+                <div class="tabs">
+                    <!-- Page 1 - Order Summary -->
+                    <div class="page-content tab tab-active pt-3" id="shoppingCartTab1">
+                        <div class="block block-strong inset mt-0">
+                            <div
+                                class="flexbox display-flex flex-row justify-content-space-between align-items-center flex-nowrap">
+                                <h1 class="m-0">Shopping Cart:</h1>
+                                <a href="#" class="link shoppingcart-clear"><i
+                                        class="fa text-muted f7-icons s-4">delete_left</i>
+                                </a>
+                            </div>
+                            <p class="m-0"></p>
+                        </div>
+                        <div class="list media-list no-hairlines-between no-hairlines m-0">
+                            <ul id="shoppingcartcontents" class="shoppingcartcontents">
+                            </ul>
+                        </div>
+
+                        <div class="block block-strong inset">
+                            <div
+                                class="flexbox display-flex flex-row justify-content-space-between align-items-center flex-nowrap shoppingcartsummary">
+                                <p class="shoppingcartlabel">Order Total:</p>
+                                <p class="shoppingcarttotal"><span>$</span>0.00</p>
+                            </div>
+                        </div>
+
+                        <div class="block block-strong inset deliveryblock" style="display:block;">
+                            <p class="shoppingcartlabel mb-3">Delivery Fees</p>
+                            <div class="list mt-2 p-2 no-hairlines no-hairlines-between shoppingcartdeliverybox">
+                                <ul>
+                                    <li>
+<label class="item-radio item-content p-0">
+<input id="deliverymodeselect1"  type="radio" name="deliverymodeselect" class="deliverymodeselect" data-label="Click &amp;amp; Collect" value="|0"  />
+<i class="icon icon-radio"></i>
+<div class="item-inner">
+<div class="item-title fw-600">Click &amp; Collect</div>
+</div>
+</label>
+</li>
+<li>
+<label class="item-radio item-content p-0">
+<input id="deliverymodeselect2"  type="radio" name="deliverymodeselect" class="deliverymodeselect" data-label="Home Delivery" value="|10.00"  />
+<i class="icon icon-radio"></i>
+<div class="item-inner">
+<div class="item-title fw-600">Home Delivery</div>
+</div>
+</label>
+</li>
+
+                                </ul>
+                            </div>
+                            <div
+                                class="deliveryblock flexbox  flex-row mb-3 justify-content-space-between align-items-center flex-nowrap shoppingcartsummary">
+                                <p class="shoppingcartlabel">Total Delivery</p>
+                                <span class="shoppingcartdeliveryamount shoppingcart-line-total">0.00</span>
+                            </div>
+                            <hr>
+                            <p class="shoppingcartdesc"></p>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="block">
+                            <a id="shoppingcartbutton1"
+                                class="col button button-fill button-large shoppingcartbutton">Continue</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Page 2 - Customer Address -->
+                    <div class="page-content tab pt-3" id="shoppingCartTab2">
+                        <div class="block block-strong inset mt-0">
+                            <h1 class="m-0">Address</h1>
+                            <p class="m-0">Please enter your address and phone #</p>
+                        </div>
+
+                        <div class="block block-strong inset mt-0">
+                            <form id="shoppingcartform" name="shoppingcartform" class="list form no-hairlines m-0">
+                                <ul>
+                                    <li class="item-content item-input item-input-outline">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">
+                                                Full Name</div>
+                                            <div class="item-input-wrap">
+                                                <input id="shoppingcart-displayname" name="shoppingcart-displayname"
+                                                    class="no-store-data" value="" type="text"
+                                                    placeholder="Enter your name" required validate>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-content item-input item-input-outline">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">email
+                                            </div>
+                                            <div class="item-input-wrap">
+                                                <input id="shoppingcart-email" name="shoppingcart-email"
+                                                    class="no-store-data" value="" type="email"
+                                                    placeholder="Enter your email address" required validate>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-content item-input item-input-outline">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Tel #
+                                            </div>
+                                            <div class="item-input-wrap">
+                                                <input id="shoppingcart-phonenumber" name="shoppingcart-phonenumber"
+                                                    class="no-store-data" value="" type="tel"
+                                                    placeholder="Enter Tel Number" required validate>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <div class="addressblock">
+
+                                        <li class="item-content item-input item-input-outline">
+                                            <div id="obj-omrpdw436" class="item-inner">
+                                                <div id="obj-lrsvxz378" class="item-title item-label">
+                                                    Address
+                                                </div>
+                                                <div id="form_-pehfhx520" class="item-input-wrap">
+                                                    <textarea id="shoppingcart-address" class="no-store-data"
+                                                        name="shoppingcart-address" rows="3"
+                                                        placeholder="Enter your Address" validate></textarea>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content item-input item-input-outline">
+                                            <div id="obj-nysasv577" class="item-inner">
+                                                <div id="obj-ziyxxt540" class="item-title item-label">Zip Code
+                                                </div>
+                                                <div id="form_-cvnhhr791" class="item-input-wrap">
+                                                    <input id="shoppingcart-zip" class="no-store-data"
+                                                        name="shoppingcart-zip" value="" type="text"
+                                                        placeholder="Enter your Zip Code" validate>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content item-input item-input-outline">
+                                            <div id="obj-vkqapb307" class="item-inner">
+                                                <div id="obj-bwzgnk947" class="item-title item-label">City
+                                                </div>
+                                                <div id="form_-ekdrrq459" class="item-input-wrap">
+                                                    <input id="shoppingcart-city" class="no-store-data"
+                                                        name="shoppingcart-city" value="" type="text"
+                                                        placeholder="Enter City name" validate>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content item-input item-input-outline">
+                                            <div class="item-inner">
+                                                <div class="item-title item-label">
+                                                    Country</div>
+                                                <div class="item-input-wrap">
+                                                    <input id="shoppingcart-country" class="no-store-data"
+                                                        name="shoppingcart-country" value="" type="text"
+                                                        placeholder="Choose your Country" validate>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </form>
+                        </div>
+
+                        <div class="block mt-4">
+                            <a id="shoppingcartbutton3"
+                                class="col button button-fill button-large shoppingcartbutton">Continue</a>
+                        </div>
+
+                        <div class="block mt-4">
+                            <a id="shoppingcartbackbutton3"
+                                class="col button button-fill button-large">Previous Page</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Page 3 - Click & Collect -->
+                    <div class="page-content tab pt-0" id="shoppingCartTab3">
+                        <div class="block block-strong inset">
+                            <h1 class="m-0">Delivery</h1>
+                            <p class="m-0">Select the delivery date below</p>
+                        </div>
+                        <div class="block block-strong inset mt-0">
+                            <form id="form-orderprocess" name="form-orderprocess"
+                                class="list form ajax-submit no-hairlines">
+                                <ul>
+                                    <li class="item-content item-input item-input-outline">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label ">
+                                                Collect Date</div>
+                                            <div class="item-input-wrap">
+                                                <input id="orderprocess-collectdate" data-date-type="date"
+                                                    data-date-min-today="true" class="no-store-data" required
+                                                    name="orderprocess-collectdate" value="" type="text"
+                                                    placeholder="Please select a date">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input item-input-outline">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label ">
+                                                Delivery Hour</div>
+                                            <div class="item-input-wrap">
+                                                <a href="#" class="item-link">
+                                                    <select id="orderprocess-collecttime" required
+                                                        name="orderprocess-collecttime" class="no-store-data">
+                                                        <option value="" disabled="">
+                                                            Choose Time
+                                                        </option>
+                                                        
+                                                    </select>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input item-input-outline">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">
+                                                Delivery Notes</div>
+                                            <div class="item-input-wrap">
+                                                <textarea id="orderprocess-notes" name="orderprocess-notes"
+                                                    class="no-store-data resizable" style="min-height: 100px;"
+                                                    placeholder="Enter Notes here" maxlength="2000"></textarea>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+
+                        <div id="paymentprocessor" class="paymentprocessor block mt-4">
+                            <a id="saveorderbtn"
+                                class="col button button-fill button-large saveorderbtn">Continue</a>
+                        </div>
+
+                        <div class="block mt-4">
+                            <a id="shoppingcartbackbutton4"
+                                class="col button button-fill button-large">Previous Page</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Page 4 - Payment -->
+                    <div class="page-content tab pt-0" id="shoppingCartTab4">
+                        <div class="block block-strong inset">
+                            <h1>#PAYMENTTITLE</h1>
+                            <p>#PAYMENTTEXT</p>
+                        </div>
+                    </div>
+
+                    <!-- Page 5 - CONFIRMATION -->
+                    <div class="page-content tab pt-0" id="shoppingCartTab5">
+                        <div class="block block-strong inset">
+                            <h1></h1>
+                            <p></p>
+                            <h3>Order #:: <span class="lastordernumber"></span></h3>
+                            <br>
+                            <div class="qrbox"><canvas id="orderqrcode"></canvas></div>
+                        </div>
+                        <div class="block">
+                            <a id="shoppingcartbuttonfinish"
+                                class="col button button-fill button-large shoppingcartbutton"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TERMS OF USE -->
+<div class="popup popup-tablet-fullscreen dbexpress-termsofuse">
+    <div class="view">
+        <div class="page navbar-fixed">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="left"><a href="#" class="link popup-close">Close</a>
+                    </div>
+                    <div class="center">Terms of Use</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div id="shoppingcartpopup-content" class="page-content">
+                <div class="block custom-block block-text">Terms of service (also known as terms of use and terms and conditions, commonly abbreviated as <b>TOS</b> or <i>ToS</i>, ToU or T&amp;C) are the legal agreements between a service provider and a person who wants to use that service. The person must agree to abide by the terms of service in order to use the offered service.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PRIVACY POLICY -->
+<div class="popup popup-tablet-fullscreen dbexpress-privacypolicy">
+    <div class="view">
+        <div class="page navbar-fixed">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="left"><a href="#" class="link popup-close">Close</a>
+                    </div>
+                    <div class="center">Privacy Policy</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div id="shoppingcartpopup-content" class="page-content">
+                <div class="block custom-block block-text">Terms of service (also known as terms of use and terms and conditions, commonly abbreviated as TOS or ToS, ToU or T&amp;amp;C) are the legal agreements between a service provider and a person who wants to use that service. The person must agree <u><font color=&quot;#2468fe&quot;>to abide by the terms of service</font></u> in order to use the offered service.<br><br>Terms of service (also known as terms of use and terms and conditions, commonly abbreviated as TOS or ToS, ToU or T&amp;amp;C) are the legal agreements between a service provider and a person who wants to use that service. The person must agree to abide by the terms of service in order to use the offered service.<br></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script type="text/javascript" src="js/service-worker-register.js"></script>
+  <script type="text/javascript" src="js/framework/framework7-bundle.min.js"></script>
+  <script type="text/javascript" src="js/framework/framework7-keypad.min.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.leaflet.com/leaflet.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.leaflet.com/thorium.leaflet.min.js"></script>
+  <script type="text/javascript" src="js/thorium.config.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.core.min.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.dbexpress.min.js?r=34668"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>

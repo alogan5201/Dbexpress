@@ -1,0 +1,20 @@
+  <div id="page" class="page" data-name="map_routes_detail">
+	
+	<div id="navbar-o-2075" class="navbar"><div id="navbg-navbar-o-2075" class="navbar-bg "></div><div id="navbar-inner-o-2077" class="navbar-inner ">
+<div id="left-o-2078" class="left">
+<a id="o-2079" href="#" class="link back">
+					<i class="icon icon-back"></i>
+					<span id="o-2080" span="" class="ios-only">Back</span>
+				</a></div>
+<div id="title-o-2081" class="title ">Map Routes</div>
+<div id="right-o-2082" class="right">
+</div>
+</div>
+
+</div>
+
+	<div id="page-contents-o-2083" class="page-content">
+   	<form id="displayer-2084" name="displayer-2084" class="form no-hairlines dbexpress-displayer" data-service="worldcities"><div id="div-2085" class="block custom-block"><div id="div-2086" class="dbexpress-field font-weight-bold text-capitalize" data-dbexpress-field="city" data-dbexpress-type="text">{{city}}</div><div id="div-2087" class="dbexpress-field text-muted text-uppercase" data-dbexpress-field="country" data-dbexpress-type="text">{{country}}</div><hr id="line-2089" class="hr"><div id="div-2088" class="dbexpress-field text-primary" data-dbexpress-field="longitude" data-stored-textbefore="Longitude: " data-dbexpress-type="text">Longitude: {{longitude}}</div><div id="div-2091" class="dbexpress-field text-primary" data-dbexpress-field="latitude" data-stored-textbefore="Latitude: " data-dbexpress-type="text">Latitude: {{latitude}}</div><div id="div-4903" class="dbexpress-field dbexpress-map mt-4 mb-4 embed-responsive-4by3" data-dbexpress-field="" data-dbexpress-type="map" data-zoom="10" data-engine="osm" data-latitude="latitude" data-longitude="longitude"></div><hr id="line-2093" class="hr mt-3 mb-3"><a id="button-2092" class="col button btn-googlemap dbexpress-field button-fill" onclick="window.open('https://www.google.com/maps/search/?api=1&amp;query={{latitude}},{{longitude}}','_parent');" data-latitude="latitude" data-longitude="longitude" data-dbexpress-type="route">Show on GoogleMap...</a><a id="obj-2094" class="col button btn-googlemap dbexpress-field mt-3 button-fill" onclick="window.open('https://www.google.com/maps/dir/?api=1&amp;origin={{latitude}},{{longitude}}','_parent');" data-latitude="latitude" data-longitude="longitude" data-dbexpress-type="route">Direction From Here....</a><a id="obj-2095" class="col button btn-googlemap dbexpress-field mt-3 button-fill" onclick="window.open('https://www.google.com/maps/dir/?api=1&amp;destination={{latitude}},{{longitude}}','_parent');" data-latitude="latitude" data-longitude="longitude" data-dbexpress-type="route">Direction To Here...</a></div></form></div>
+
+</div>
+

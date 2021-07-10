@@ -1,0 +1,18 @@
+/* -- custom css for file repeater_with_detail.html -- */
+
+/* -- fa f7-icons -- */
+#icon-5244 {
+	font-size: 25px;
+}
+
+/* -- virtual-list-media dbexpress-field dbexpress-image -- */
+#repeater-1479-imp {
+	width: 44px;
+	 height: 44px;
+}
+
+/* -- dbexpress-field text-white hideifempty font-weight-bold -- */
+#repeater-1479-iaf {
+	font-size: 11px;
+}
+

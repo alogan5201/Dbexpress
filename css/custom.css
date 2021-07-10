@@ -1,0 +1,10 @@
+/* --- Create your own CSS Here */
+
+:root .theme-dark {
+    --f7-page-bg-color: rgb(40,40,40);
+}
+
+
+.inline-labels .item-input-info {
+    display: none;
+}
